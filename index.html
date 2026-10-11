@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chat app demo</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 8px;
+      color: #111;
+      background: #fff;
+    }
+    h2 { font-size: 22px; }
+    #messages { margin-bottom: 8px; }
+    .message { margin: 4px 0; overflow-wrap: anywhere; }
+    form { display: flex; align-items: center; }
+    input {
+      width: 160px;
+      box-sizing: border-box;
+      font-size: 14px;
+    }
+    button { font-size: 14px; cursor: pointer; }
+  </style>
+</head>
+<body>
+  <h2>Chat app demo!!!</h2>
+  <div id="messages"><!-- MESSAGES --></div>
+  <form action="/message" method="POST">
+    <input type="text" name="message" autocomplete="off" required>
+    <button type="submit">Send</button>
+  </form>
+</body>
+</html>
